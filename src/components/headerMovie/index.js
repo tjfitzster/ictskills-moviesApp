@@ -7,6 +7,8 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import HomeIcon from "@material-ui/icons/Home";
 
+import { withRouter } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -20,13 +22,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MovieHeader = (props) => {
+
+const MovieHeader = ( { movie, history}) => {
   const classes = useStyles();
-  const movie = props.movie;
+
 
   return (
     <Paper component="div" className={classes.root}>
-      <IconButton aria-label="go back">
+     <IconButton aria-label="go back" onClick={() => history.goBack()} >
         <ArrowBackIcon color="primary" fontSize="large" />
       </IconButton>
 
@@ -38,11 +41,11 @@ const MovieHeader = (props) => {
         <br />
         <span className={classes.tagLine}>{`   "${movie.tagline}"`} </span>
       </Typography>
-      <IconButton aria-label="go forward">
+      <IconButton aria-label="go forward" onClick={() => history.goForward() } >
         <ArrowForwardIcon color="primary" fontSize="large" />
       </IconButton>
     </Paper>
   );
 };
 
-export default MovieHeader;
+export default withRouter(MovieHeader);
