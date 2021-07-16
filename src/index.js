@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import HomePage from "./pages/homepage";
 import MovieDetailsPage from './pages/movieDetailsPage'
 
-const images = [
+const images = [ 
   "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
   "/v1QQKq8M0fWxMgSdGOX1aCv8qMB.jpg",
   "/2iGN0aKHJYD0xQydlfuCUAcgNbO.jpg",
@@ -94,7 +94,7 @@ const sample = {
 const movies = [sample, sample, sample, sample, sample, sample, sample];
 
 const App = () => {
-  return (
+  return ( 
     <MovieDetailsPage movie={sample} images={images} />
   );
 };
