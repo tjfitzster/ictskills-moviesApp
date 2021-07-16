@@ -11,10 +11,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import img from '../../images/pexels-dziana-hasanbekava-5480827.jpg'
-import { getGenres } from "../../api/tmdb-api"; 
+import { getGenres } from "../../api/tmdb-api";
 
 const useStyles = makeStyles((theme) => ({
-  root: { 
+  root: {
     maxWidth: 345,
     backgroundColor: "rgb(204, 204, 0)",
   },
