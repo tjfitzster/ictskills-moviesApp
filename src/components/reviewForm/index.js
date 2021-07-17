@@ -13,7 +13,7 @@ import MuiAlert from "@material-ui/lab/Alert";
 
 const ratings = [
   {
-    value: 5,
+    value: 5, 
     label: "Excellent",
   },
   {
