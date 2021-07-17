@@ -12,7 +12,7 @@ const queryClient = new QueryClient({
       refetchOnWindowFocus: false,
     },
   },
-});
+}); 
 
 export default {
   title: "Home Page/FilterMoviesCard",
